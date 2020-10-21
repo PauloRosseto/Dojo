@@ -1,0 +1,26 @@
+Este estudo visa o entendimento de sockets e sua programação.
+
+https://docs.oracle.com/cd/E19455-01/806-1017/sockets-4/index.html --> Tipos de Socket
+	Familia de Internet. Define as propriedades de uma comunicação.
+	AF_INET6 -> Para IPv6
+	AF_INET  -> Para IPv4
+
+	Tipos de Socket:
+		SOCK_STREAM -> TCP, Bidirecional, confiável, sequenciável e não duplicável. Os dados são gravados como um bytestream.
+		SOCK_DGRAM  -> UDP, Bidirecional. 
+		SOCK_RAW    -> ICMP, Sua características dependem do protocolo. Usado para desenvolvimento de novos protocolos. Somente superusuários podem usar este tipo de socket.
+
+	Linhas gerais da programação de sockets (Python): https://docs.python.org/pt-br/3/howto/sockets.html
+
+	    Cliente:
+		Criar um Socket
+			import socket; sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM);
+		Conectar a Um servidor
+			sock.connect("url", int_porta)
+		Enviar mensagem
+			sock.send("Mensagem")
+		Receber mensagem
+			a = sock.response()
+		Fechar Conexão
+			sock.close()
+	
