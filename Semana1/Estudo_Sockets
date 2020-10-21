@@ -24,3 +24,10 @@ https://docs.oracle.com/cd/E19455-01/806-1017/sockets-4/index.html --> Tipos de 
 		Fechar Conexão
 			sock.close()
 	
+
+	    Servidor:
+		Criar um socket
+		Atrelar (Bind)
+		Esperar pela conexão
+		Fechar conexão
+
